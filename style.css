@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Roboto:wght@400;700&display=swap');
+/* font-family: 'Limelight', cursive;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: sans-serif;
+    width: 100vw;
+    font-size: 1rem;
+}
+
+body{
+    background-color: #fff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 1.1rem;
+    z-index: 100;
+    box-shadow: 0 1px 2px 0;
+}
+
+.logo{
+  font-family: 'Limelight', cursive;
+  font-size: 1.6rem;
+}
+
+nav {
+    display: flex;
+    gap: 5px;
+}
+  
+nav a {
+    list-style-type: none;
+    padding: 0.5rem .7rem;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: .8rem;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s ease-in-out;
+}
+nav a:hover{
+  background-color: rgba(6, 149, 185, 0.849);
+  color: black;
+}
+
+#home {
+  width: 100vw;
+  height: auto;
+  display: inline-block;
+  padding: 0 15vw;
+  line-height: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-ticket {
+  padding: 0  .7rem;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(6, 149, 185, 0.849);
+  color:black;
+}
+.btn-ticket:hover{
+  background-color: rgba(176, 181, 182, 0.849);
+}
+
+.btn-ticket a{
+  border-style: white;
+  border-radius: 2rem;
+
+}
+.banner {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  margin-bottom: 10vh;
+}
+
+figure h1 {
+  margin-top: -120vh;
+  margin-left: 60vw;
+  color: rgb(37, 4, 4);
+  position: absolute;
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#about {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10vw 15vw;
+  gap: 8vw;
+  line-height: 1.5rem;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer{
+  padding: 5vh;
+  background-color: #ccc;
+  text-align: center;
+}
+
+/* iphone 5 -------------------*/
+
+@media (max-width: 320px) {
+  header{
+    padding: .5rem .2rem .5rem .3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: sticky;
+}
+
+  #home {
+    line-height: 1.rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    font-size: .8rem;
+  }
+  
+  figure h1 {
+    margin-top: -48vh;
+    margin-left: 56vw;
+    position: absolute;
+    font-size: 1.8rem;
+  }
+
+  #about {
+    grid-template-columns: 1fr;
+    margin: 7vh 0;
+    padding: 0 5vw;
+    line-height: 1.2rem;
+    font-size: .8rem;
+  }
+}
+
+/* tablet -------------- */
+@media (min-width: 768px) {
+  header{
+    padding: 1.1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: sticky;
+}
+  
+  #home {
+    width: 100vw;
+    height: auto;
+    padding: 5vw 9vw;
+    line-height: 1.5rem;
+  }
+  
+  figure h1 {
+    margin-top: -57vh;
+    margin-left: 60vw;
+    position: absolute;
+    font-size: 2.5rem;
+  }
+
+#about {
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5vw 10vw;
+  gap: 8vw;
+  line-height: 1.2rem;
+}
+}
+
+/* web----------------------- */
+
+@media (min-width: 1024px) {
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  padding: 1.1rem;
+  z-index: 100;
+}
+
+.logo{
+font-size: 1.6rem;
+}
+
+nav {
+  display: flex;
+  gap: 5px;
+}
+
+nav a {
+  list-style-type: none;
+  padding: 0.5rem .7rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: .8rem;
+  transition: all .3s ease-in-out;
+}
+
+#home {
+width: 100vw;
+height: auto;
+display: inline-block;
+padding: 0 15vw;
+line-height: 1.5rem;
+}
+
+.banner {
+width: 100vw;
+height: auto;
+position: relative;
+margin-bottom: 10vh;
+}
+
+figure h1 {
+margin-top: -120vh;
+margin-left: 60vw;
+position: absolute;
+font-size: 3rem;
+}
+
+#about {
+position: relative;
+width: 100vw;
+height: auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 10vw 15vw;
+gap: 8vw;
+line-height: 1.5rem;
+}
+
+}
