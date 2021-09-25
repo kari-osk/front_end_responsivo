@@ -119,7 +119,7 @@ footer{
 
 /* iphone 5 -------------------*/
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   header{
     padding: .5rem .2rem .5rem .3rem;
     display: flex;
@@ -129,7 +129,7 @@ footer{
 }
 
   #home {
-    line-height: 1.rem;
+    line-height: 1rem;
     font-family: 'Roboto', sans-serif;
     padding: 1rem;
     font-size: .8rem;
