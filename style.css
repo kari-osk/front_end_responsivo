@@ -70,11 +70,11 @@ nav a:hover{
   padding: 0  .7rem;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  background-color: rgba(6, 149, 185, 0.849);
+  background-color: #ccc;
   color:black;
 }
 .btn-ticket:hover{
-  background-color: rgba(176, 181, 182, 0.849);
+  background-color: rgba(6, 149, 185, 0.849);
 }
 
 .btn-ticket a{
